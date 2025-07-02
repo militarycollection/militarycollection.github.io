@@ -19,7 +19,12 @@
             padding: 0.5rem 2rem;
         }
         .flag {
-            height: 40px;
+            height: 44px;
+        }
+        .logo-img {
+            height: 44px;
+            margin-left: 10px;
+            vertical-align: middle;
         }
         .logo-text {
             color: #fff;
@@ -27,6 +32,12 @@
             font-weight: bold;
             letter-spacing: 2px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .logo-group {
+            display: flex;
+            align-items: center;
         }
         @media (max-width: 600px) {
             .top-bar {
@@ -92,8 +103,13 @@
 </head>
 <body>
     <div class="top-bar">
-        <img class="flag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag">
-        <span class="logo-text">Military Collections</span>
+        <!-- Animated American flag GIF on the left -->
+        <img class="flag" src="https://media.giphy.com/media/3oEjHCWdU7F4B2gYBa/giphy.gif" alt="American Flag">
+        <!-- Logo group on the right -->
+        <div class="logo-group">
+            <span class="logo-text">Military Collections</span>
+            <img class="logo-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Military Logo">
+        </div>
     </div>
     <header>
         <h1>Military Collection</h1>
